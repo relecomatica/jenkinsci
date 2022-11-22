@@ -1,4 +1,3 @@
-def hora = "new Date().format('HH')"
 pipeline
 {
     agent any
@@ -10,6 +9,7 @@ pipeline
             {       
                 script
                 {
+                    def hora = new Date().format('HH')
                     if( hora < 12 )
                         {
                             echo "Ejecutamos proceso"    
