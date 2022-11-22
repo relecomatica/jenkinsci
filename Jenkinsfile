@@ -30,6 +30,6 @@ pipeline {
 
 def mostrarPoblacionNeta(Integer a)
 {
-    return habitantes = 3223000/2
+    int habitantes = 3223000/2
     return a
 }
