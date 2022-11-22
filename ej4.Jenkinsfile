@@ -9,11 +9,10 @@ pipeline
             {       
                 script
                 {
-                    def hora = new Date().format('HH')
-                    def dateTime1 = new Date().parse(hora)
-                    def dateTime2 = new Date().parse(hora, "12")
-                    println hora
-                    if( dateTime1 > dateTime2 )
+                    Date now = new Date()
+                    String stringDate = "10-03-2017"
+                    Date parsedDate= Date.parse("dd-MM-yyyy", stringDate)
+                    if(parsedDate > now)
                     {
                         echo "Ejecutamos Proceso"
                     }
