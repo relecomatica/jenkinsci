@@ -1,5 +1,5 @@
 def temActual = 10
-def canHabitantes = 3223
+def canHabitantes = 3223000
 
 pipeline {
     agent any
@@ -28,8 +28,8 @@ pipeline {
     }
 }
 
-def mostrarPoblacionNeta(Integer a)
+def mostrarPoblacionNeta(Integer)
 {
-    def Poblacion = canHabitantes/2
-    return a
+    def Poblacion = 3223000/2
+    return Poblacion
 }
