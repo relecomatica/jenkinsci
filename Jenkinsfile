@@ -22,7 +22,6 @@ pipeline {
                     script
                     {
                         mostrarPoblacionNeta(1)
-                        return
                     }
                 }
             }
@@ -31,6 +30,6 @@ pipeline {
 
 def mostrarPoblacionNeta(Integer)
 {
-    def habitantes = 3223000/2
-    return
+    def habitantes = 3223000 / 2
+    println habitantes
 }
