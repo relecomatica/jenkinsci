@@ -30,6 +30,6 @@ pipeline {
 
 def mostrarPoblacionNeta(String a)
 {
-    sh "canHabitantes / 2"
+    canHabitantes / 2
     echo a
 }
