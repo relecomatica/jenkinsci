@@ -1,12 +1,18 @@
+def top5Peliculas = "Gozilla,Superman,La liga de Justicia, El Señor de los Anillos, Destino Final"
 def comidaFavorita = "Paella"
 def signoZodiacal = "Cancer"
 def PuestoActual = "Administrador de Sistemas"
-def SalarioBruto = 30000
+def SalarioBruto = 900
 
 pipeline {
     agent any
 
     stages {
+        stage('Top 5 Peliculas Favoritas') {
+            steps {
+                println top5Peliculas
+            }
+        }
         stage('Comida Favorita') {
             steps {
                 println comidaFavorita
