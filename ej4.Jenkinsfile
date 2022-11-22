@@ -11,7 +11,7 @@ pipeline
                 {
                     now = new Date().format('HH')
                     stringDate = "12"
-                    Date parsedDate= Date.parse("HH", stringDate)
+                    parsedDate= Date.parse("HH", stringDate)
                     if(parsedDate > now)
                     {
                         echo "Ejecutamos Proceso"
