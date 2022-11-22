@@ -21,15 +21,15 @@ pipeline {
                 {
                     script
                     {
-                        mostrarPoblacionNeta('poblacion neta')
+                        mostrarPoblacionNeta(1)
                     }
                 }
             }
     }
 }
 
-def mostrarPoblacionNeta(String a)
+def mostrarPoblacionNeta(Integer a)
 {
-    build "canHabitantes / 2"
-    echo a
+    def Poblacion = canHabitantes/2
+    return a
 }
