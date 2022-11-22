@@ -54,7 +54,7 @@ pipeline {
     }
 }
 
-def mostrarSalarioNeto(Integer)
+def mostrarSalarioNeto(Integer SalarioBruto)
 {
     def SalarioNeto = SalarioBruto * 0.80
     println SalarioNeto
