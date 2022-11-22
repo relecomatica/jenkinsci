@@ -11,16 +11,11 @@ pipeline
                 script
                 {
                     def hora = new Date().format('HH')
-                    if( hora > 12 )
-                        {
-                            echo "${GIT_AUTHOR_NAME}"
-                            echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                            echo "Ejecutamos Proceso"
-                        }
-                        else
-                        {
-                            echo "No ejecutamos el proceso"
-                        }
+                    printnl hora
+                    echo "${GIT_AUTHOR_NAME}"
+                    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                    echo "Ejecutamos Proceso"
+                   
                 }
                 
             }
