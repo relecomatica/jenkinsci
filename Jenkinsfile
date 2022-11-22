@@ -1,11 +1,20 @@
+def temActual = 10
+def canHabitantes = 3223M
+
 pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Temperatura Madrid') {
             steps {
-                echo 'Hello World'
+                println temActual
             }
         }
+        stage('Habitantes Madrid') {
+            steps {
+                println canHabitantes
+            }
+        }
+        
     }
 }
