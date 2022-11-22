@@ -21,15 +21,15 @@ pipeline {
                 {
                     script
                     {
-                        mostrarPoblacionNeta(return)
+                        mostrarPoblacionNeta(1)
                     }
                 }
             }
     }
 }
 
-def mostrarPoblacionNeta(return)
+def mostrarPoblacionNeta(Integer)
 {
     def Poblacion = 3223000/2
-    echo return
+    return Poblacion
 }
