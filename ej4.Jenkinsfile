@@ -1,3 +1,4 @@
+def hora = new Date().format('HH')
 pipeline
 {
     agent any
@@ -10,15 +11,25 @@ pipeline
                 
                 script
                 {
-                    def hora = new Date().format('HH')
-                    println hora
-                    echo "${env.GIT_AUTHOR_NAME}"
-                    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                    echo "Ejecutamos Proceso"
+                    if( hora > 12 )
+                        {
+                            EjecutamosProceso(java)
+                        }
+                        else
+                        {
+                            echo "No ejecutamos el proceso"
+                            println hora
+                        }
+      
                    
                 }
                 
             }
         }
     }
+}
+def EjecutamosProceso(String a)
+{
+    sh "java --version"
+    echo a
 }
