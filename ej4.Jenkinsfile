@@ -12,7 +12,7 @@ pipeline
                 {
                     def hora = new Date().format('HH')
                     println hora
-                    echo "${GIT_AUTHOR_NAME}"
+                    echo "${env.GIT_AUTHOR_NAME}"
                     echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                     echo "Ejecutamos Proceso"
                    
