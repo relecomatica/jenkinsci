@@ -9,7 +9,7 @@ pipeline
             {       
                 script
                 {
-                    def hora = "HH"
+                    def hora = new Date().format('HH')
                     def dateTime1 = new Date().parse(hora)
                     def dateTime2 = new Date().parse(hora, "12")
                     println hora
