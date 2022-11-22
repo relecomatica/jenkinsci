@@ -4,7 +4,7 @@ pipeline
     agent any
     stages
     {
-        stage("Ejecutar Proceso despues de las 12")
+        stage("Prebuild")
         {
             steps
             {
