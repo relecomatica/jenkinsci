@@ -2,7 +2,7 @@ def top5Peliculas = "1-Gozilla, 2-Superman, 3-La liga de Justicia, 4-El Señor d
 def comidaFavorita = "Paella"
 def signoZodiacal = "Cancer"
 def PuestoActual = "Administrador de Sistemas"
-def SalarioBruto = 900
+def SalarioBruto = 33000
 
 pipeline {
     agent any
