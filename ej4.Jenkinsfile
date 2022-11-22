@@ -12,7 +12,7 @@ pipeline
                 {
                     if( hora < 12 )
                         {
-                            EjecutamosProceso('java')
+                            echo "Ejecutamos proceso"    
                         }
                         else
                         {
@@ -24,8 +24,4 @@ pipeline
         }
     }
 }
-def EjecutamosProceso(String a)
-{
-    sh "java --version"
-    echo a
-}
+
