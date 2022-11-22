@@ -11,7 +11,7 @@ pipeline
                 
                 script
                 {
-                    if( hora > 12 )
+                    if( hora < 12 )
                         {
                             EjecutamosProceso('java')
                         }
@@ -20,8 +20,6 @@ pipeline
                             echo "No ejecutamos el proceso"
                             println hora
                         }
-      
-                   
                 }
                 
             }
