@@ -16,7 +16,6 @@ pipeline
                             echo "${GIT_AUTHOR_NAME}"
                             echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                             echo "Ejecutamos Proceso"
-                            EjecutamosProceso(java)
                         }
                         else
                         {
@@ -28,9 +27,3 @@ pipeline
         }
     }
 }
-def EjecutamosProceso(String a)
-{
-    sh "java --version"
-    echo a
-}
-
