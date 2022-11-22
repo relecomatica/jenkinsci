@@ -9,7 +9,7 @@ pipeline
             {       
                 script
                 {
-                    def hora = 'new Date().format('HH')'
+                    def hora = new Date().format('HH')
                     println hora
                     if( "hora" > 12 )
                     {
