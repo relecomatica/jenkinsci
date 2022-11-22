@@ -7,8 +7,7 @@ pipeline
         stage("Prebuild")
         {
             steps
-            {
-                
+            {       
                 script
                 {
                     if( hora < 12 )
@@ -21,7 +20,6 @@ pipeline
                             println hora
                         }
                 }
-                
             }
         }
     }
