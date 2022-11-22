@@ -11,7 +11,7 @@ pipeline
                 {
                     def hora = new Date().format('HH')
                     println hora
-                    if( 2 > 12 )
+                    if( $hora > 12 )
                     {
                         echo "Ejecutamos Proceso"
                     }
