@@ -10,7 +10,7 @@ pipeline
                 script
                 {
                     int hora = new Date().format('HH')
-                    println hora
+                    return hora
                     if( hora > 12 )
                     {
                         echo "Ejecutamos Proceso"
