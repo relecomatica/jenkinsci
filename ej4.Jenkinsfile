@@ -13,7 +13,7 @@ pipeline
                 {
                     if( hora > 12 )
                         {
-                            EjecutamosProceso(java)
+                            EjecutamosProceso('java')
                         }
                         else
                         {
