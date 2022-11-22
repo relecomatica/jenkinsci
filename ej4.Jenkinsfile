@@ -13,7 +13,7 @@ pipeline
                     def dateTime1 = new Date().parse(hora)
                     def dateTime2 = new Date().parse(hora, "12")
                     println hora
-                    if( "hora" > 12 )
+                    if( dateTime1 > dateTime2 )
                     {
                         echo "Ejecutamos Proceso"
                     }
