@@ -1,4 +1,4 @@
-def hora = new Date().format('HH')
+def hora = "new Date().format('HH')"
 pipeline
 {
     agent any
