@@ -15,6 +15,21 @@ pipeline {
                 println canHabitantes
             }
         }
-        
+        stage("Prebuild")
+            {
+                steps
+                {
+                    script
+                    {
+                        mostrarPoblacionNeta('poblacion neta')
+                    }
+                }
+            }
     }
+}
+
+def mostrarPoblacionNeta(String a)
+{
+    bat "canHabitantes / 2"
+    echo a
 }
