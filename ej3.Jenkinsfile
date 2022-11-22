@@ -33,7 +33,14 @@ pipeline {
                 {
                     script
                     {
-                        mostrarSalarioNeto(1)
+                        if( SalarioBruto > 1000 )
+                        {
+                            mostrarSalarioNeto(1)
+                        }
+                        else
+                        {
+                            println SalarioBruto
+                        }
                     }
                 }
             }
@@ -42,6 +49,7 @@ pipeline {
 
 def mostrarSalarioNeto(Integer)
 {
-    def SalarioNeto = SalarioBruto * 0.80
+
+    def SalarioNeto = 30000 * 0.80
     println SalarioNeto
 }
