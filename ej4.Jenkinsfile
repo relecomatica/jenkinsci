@@ -13,8 +13,8 @@ pipeline
                     def hora = new Date().format('HH')
                     if( hora > 12 )
                         {
-                            def user = cause.userId
-                            echo "started by ${user}"
+                            echo "${GIT_AUTHOR_NAME}"
+                            echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                             echo "Ejecutamos Proceso"
                             EjecutamosProceso()
                            
