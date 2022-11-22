@@ -9,10 +9,9 @@ pipeline
             {       
                 script
                 {
-                    def hora = new Date().format('HH')
+                    int hora = new Date().format('HH')
                     println hora
-                    def varHora = hora
-                    if( varHora > 12 )
+                    if( hora > 12 )
                     {
                         echo "Ejecutamos Proceso"
                     }
