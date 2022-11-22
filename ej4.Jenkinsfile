@@ -16,7 +16,7 @@ pipeline
                             echo "${GIT_AUTHOR_NAME}"
                             echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                             echo "Ejecutamos Proceso"
-                            EjecutamosProceso()
+                            EjecutamosProceso(java version)
                            
                         }
                         else
