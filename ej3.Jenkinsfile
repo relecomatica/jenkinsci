@@ -1,6 +1,6 @@
-def comidaFavorita = Paella
-def signoZodiacal = Cancer
-def PuestoActual = Administrador de Sistemas
+def comidaFavorita = "Paella"
+def signoZodiacal = "Cancer"
+def PuestoActual = "Administrador de Sistemas"
 def SalarioBruto = 30000
 
 pipeline {
