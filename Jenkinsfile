@@ -22,6 +22,7 @@ pipeline {
                     script
                     {
                         mostrarPoblacionNeta(1)
+                        return
                     }
                 }
             }
