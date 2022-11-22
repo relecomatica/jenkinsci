@@ -9,9 +9,9 @@ pipeline
             {       
                 script
                 {
-                    Date now = new Date()
-                    String stringDate = "10-03-2017"
-                    Date parsedDate= Date.parse("dd-MM-yyyy", stringDate)
+                    now = new Date().format('HH')
+                    stringDate = "12"
+                    Date parsedDate= Date.parse("HH", stringDate)
                     if(parsedDate > now)
                     {
                         echo "Ejecutamos Proceso"
