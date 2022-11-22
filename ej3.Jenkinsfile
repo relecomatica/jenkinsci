@@ -1,4 +1,4 @@
-def top5Peliculas = "Gozilla,Superman,La liga de Justicia, El Señor de los Anillos, Destino Final"
+def top5Peliculas = "1-Gozilla, 2-Superman, 3-La liga de Justicia, 4-El Señor de los Anillos, 5-Destino Final"
 def comidaFavorita = "Paella"
 def signoZodiacal = "Cancer"
 def PuestoActual = "Administrador de Sistemas"
@@ -41,7 +41,7 @@ pipeline {
                     {
                         if( SalarioBruto > 1000 )
                         {
-                            mostrarSalarioNeto(1)
+                            mostrarSalarioNeto(SalarioBruto)
                         }
                         else
                         {
@@ -56,7 +56,6 @@ pipeline {
 
 def mostrarSalarioNeto(Integer)
 {
-
-    def SalarioNeto = 30000 * 0.80
+    def SalarioNeto = SalarioBruto * 0.80
     println SalarioNeto
 }
