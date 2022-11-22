@@ -41,7 +41,6 @@ pipeline {
                     {
                         if( SalarioBruto > 1000 )
                         {
-                            echo "Salario Neto"
                             mostrarSalarioNeto(1)
                         }
                         else
