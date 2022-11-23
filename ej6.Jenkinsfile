@@ -14,17 +14,17 @@ pipeline {
 				{
                         		EjecutamosComandoDos('ComandoDos')
                         	}
-				echo "Temperatura Actual: "
 		                    break; 
 	                    case 2: 
-                        while(intHora>=11 && intHora=<15) {
-                        ComprobamosVersionGit('Version Git')
-                        }
+                        	while(intHora >= 11 && intHora <= 15) 
+				{
+                        		ComprobamosVersionGit('Version Git')
+                        	}	
 		                    break; 
 	                    case 3: 
 		                    println("Miercoles");
-				                echo "Numero PI: " 
-				                println NumPi
+				    echo "Numero PI: " 
+
 		                    break; 	    
 	                    default: 
 		                    println("Valor desconocido"); 
