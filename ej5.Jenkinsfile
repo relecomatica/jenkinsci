@@ -1,6 +1,6 @@
-import java.lang.System.out;
 def TemActual = 12
 def SumNum = 150 * 350
+def NumPi = Math.PI
 def BUILD_USER = "Jhon Montes"
 pipeline {
     agent any 
@@ -29,7 +29,7 @@ pipeline {
 		                    break; 
 	                    case 3: 
 		                    println("Miercoles");
-				    System.out.println(Math.PI)
+				    println NumPi
 		                    break; 
 	                    case 4: 
 		                    println("Jueves"); 
