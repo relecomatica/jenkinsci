@@ -9,7 +9,7 @@ pipeline
             {       
                 script
                 {
-                    def str = "new Date().format('HH')"
+                    def str = new Date().format('HH')
                     int num = str as Integer
                     if ( num > 12 )
                     {
