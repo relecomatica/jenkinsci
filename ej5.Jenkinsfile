@@ -19,7 +19,7 @@ pipeline {
                         7:"Domingo",
                     ]  
                     println map[dia]
-                    if ( map[dia] == 1 )
+                    if ( map[dia] == 3 )
                     {
                     println map[dia] TemActual
                     }
