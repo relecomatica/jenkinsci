@@ -21,19 +21,29 @@ pipeline {
                     println map[dia]
                     switch(dia) {            
 	                    case 1: 
-		                    println("The value of a is One"); 
+		                    println("Lunes"); 
 		                    break; 
 	                    case 2: 
-		                    println("The value of a is Two"); 
+		                    println("Martes"); 
 		                    break; 
 	                    case 3: 
-		                    println("The value of a is Three"); 
+		                    println("Miercoles");
+				    System.out.println(Math.PI);
 		                    break; 
 	                    case 4: 
-		                    println("The value of a is Four"); 
+		                    println("Jueves"); 
 		                    break; 
+	                    case 5: 
+		                    println("Viernes"); 
+		                    break; 
+	                    case 6: 
+		                    println("Sabado"); 
+		                    break; 
+	                    case 7: 
+		                    println("Domingo"); 
+		                    break; 				    
 	                    default: 
-		                    println("The value is unknown"); 
+		                    println("Valor desconocido"); 
 		                    break; 
                     }
 
