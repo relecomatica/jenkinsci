@@ -14,7 +14,13 @@ pipeline
                     if ( intHora > 7 )
                     {
                         echo "Ejecutamos Proceso"
+                        echo "Version Java"
                         EjecutamosProceso('java version')
+                        echo "Usuario que ejecuta el Proceso"
+                        echo "${env.CHANGE_AUTHOR}"
+                        echo "${env.BUILD_USER}"
+                        echo "${env.BUILD_USER_ID}"
+                        
                         
                     }
                     else
