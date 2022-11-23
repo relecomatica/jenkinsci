@@ -9,8 +9,9 @@ pipeline
             {       
                 script
                 {
-                    def intHora = 'new Date().format('HH')' as int
-                    if( intHora > 12)
+                    def str = "new Date().format('HH')"
+                    int num = str as Integer
+                    if ( num > 12 )
                     {
                         echo "Ejecutamos Proceso"
                     }
