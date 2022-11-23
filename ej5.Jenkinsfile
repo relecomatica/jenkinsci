@@ -9,7 +9,7 @@ pipeline {
         stage("Comprobar fecha") {
             steps {
                 script {
-                    def dia = 5
+                    def dia = new Date().getDay()
                     def map=[
                         1:"Lunes",
                         2:"Martes",
