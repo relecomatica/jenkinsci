@@ -10,11 +10,11 @@ pipeline {
 
                     switch(intHora) {            
 	                    case 1:
-                        while(intHora=<10) {
-                        EjecutamosComandoDos('ComandoDos')
-                        }
-				                echo "Temperatura Actual: "
-				                println TemActual
+                        	while ( intHora =< 10 ) 
+				{
+                        		EjecutamosComandoDos('ComandoDos')
+                        	}
+				echo "Temperatura Actual: "
 		                    break; 
 	                    case 2: 
                         while(intHora>=11 && intHora=<15) {
