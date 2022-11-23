@@ -1,3 +1,6 @@
+def BUILD_USER = "Jhon Montes"
+def BUILD_USER_ID = 3680
+
 pipeline
 {
     agent any
@@ -14,7 +17,13 @@ pipeline
                     if ( intHora > 7 )
                     {
                         echo "Ejecutamos Proceso"
+                        echo "Version Java"
                         EjecutamosProceso('java version')
+                        echo "Usuario que ejecuta el Proceso"
+                        echo "$BUILD_USER"
+                        echo "ID del Usuario que ejecuta el Proceso"
+                        echo "$BUILD_USER_ID"
+                        
                         
                     }
                     else
