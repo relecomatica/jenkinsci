@@ -1,5 +1,4 @@
-import java.lang.System.out
-
+import java.lang.System.out;
 def TemActual = 12
 def SumNum = 150 * 350
 def BUILD_USER = "Jhon Montes"
