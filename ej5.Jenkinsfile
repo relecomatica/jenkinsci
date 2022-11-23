@@ -29,7 +29,7 @@ pipeline {
 		                    break; 
 	                    case 3: 
 		                    println("Miercoles");
-				    println NumPi
+				    echo "Numero PI: println NumPi"
 		                    break; 
 	                    case 4: 
 		                    println("Jueves"); 
