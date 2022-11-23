@@ -1,6 +1,5 @@
 def TemActual = 12
 def SumNum = 150 * 350
-def NumPi = 
 def BUILD_USER = "Jhon Montes"
 pipeline {
     agent any 
