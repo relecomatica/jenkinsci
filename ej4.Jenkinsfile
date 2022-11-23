@@ -17,9 +17,9 @@ pipeline
                         echo "Version Java"
                         EjecutamosProceso('java version')
                         echo "Usuario que ejecuta el Proceso"
-                        echo "${env.CHANGE_AUTHOR}"
-                        echo "${env.BUILD_USER}"
-                        echo "${env.BUILD_USER_ID}"
+                        echo "$CHANGE_AUTHOR"
+                        echo "$BUILD_USER"
+                        echo "$BUILD_USER_ID"
                         
                         
                     }
