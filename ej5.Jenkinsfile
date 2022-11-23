@@ -19,10 +19,24 @@ pipeline {
                         7:"Domingo",
                     ]  
                     println map[dia]
-                    if ( map[dia] == 3 )
-                    {
-                    println map[dia] TemActual
+                    switch(dia) {            
+	                    case 1: 
+		                    println("The value of a is One"); 
+		                    break; 
+	                    case 2: 
+		                    println("The value of a is Two"); 
+		                    break; 
+	                    case 3: 
+		                    println("The value of a is Three"); 
+		                    break; 
+	                    case 4: 
+		                    println("The value of a is Four"); 
+		                    break; 
+	                    default: 
+		                    println("The value is unknown"); 
+		                    break; 
                     }
+
                 }
             }
         }
