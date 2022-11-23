@@ -9,10 +9,7 @@ pipeline
             {       
                 script
                 {
-                    def now = new Date().format('HH')
-                    def stringDate = "12"
-                    def parsedDate= parse("HH", stringDate)
-                    if(parsedDate > now)
+                    if( "new Date().format('HH')" > 12)
                     {
                         echo "Ejecutamos Proceso"
                     }
