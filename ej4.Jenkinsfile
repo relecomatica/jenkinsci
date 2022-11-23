@@ -14,7 +14,7 @@ pipeline
                     if ( intHora > 7 )
                     {
                         echo "Ejecutamos Proceso"
-                        EjecutamosProceso(java)
+                        EjecutamosProceso('java version')
                         
                     }
                     else
