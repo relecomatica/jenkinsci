@@ -7,30 +7,18 @@ pipeline {
                 script {
                     def str = new Date().format('HH')
                     int intHora = str as Integer
-
-                    switch(intHora) {            
-	                    case 1:
-                        	while ( intHora <= 10 ) 
-				{
-                        		EjecutamosComandoDos('ComandoDos')
-                        	}
-		                    break; 
-	                    case 2: 
-                        	while(intHora >= 11 && intHora <= 15) 
-				{
-                        		ComprobamosVersionGit('Version Git')
-                        	}	
-		                    break; 
-	                    case 3: 
-		                    println("Miercoles");
-				    echo "Numero PI: " 
-
-		                    break; 	    
-	                    default: 
-		                    println("Valor desconocido"); 
-		                    break; 
-                    }
-
+		    if ( intHora <= 10 )
+		    {
+		    	EjecutamosComandoDos('ComandoDos')
+		    }
+		    else if ( intHora >= 11 && intHora <= 15 )
+		    {
+		    	ComprobamosVersionGit('Version Git')
+		    }
+		    else if ( intHora >= 16 && intHora <= 22 )
+		    {
+		    	HoraSistema('Hora')
+		    }
                 }
             }
         }
@@ -46,4 +34,8 @@ def EjecutamosComandoDos(String a)
     sh "ifconfig"
     echo a
 }
-
+def HoraSistema(String a)
+{
+    sh "time"
+    echo a
+}
