@@ -19,7 +19,6 @@ pipeline {
                         6:"Sabado",
                         7:"Domingo",
                     ]  
-                    println map[dia]
                     switch(dia) {            
 	                    case 1: 
 		                    println("Lunes");
