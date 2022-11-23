@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     def str = new Date().format('HH')
-                    int intHora = 18
+                    int intHora = str as Integer
 		    if ( intHora <= 10 )
 		    {
 		    	EjecutamosComandoDos('ComandoDos')
