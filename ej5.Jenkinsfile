@@ -1,4 +1,4 @@
-import java.lang.System
+import java.lang.System.out
 
 def TemActual = 12
 def SumNum = 150 * 350
@@ -30,7 +30,7 @@ pipeline {
 		                    break; 
 	                    case 3: 
 		                    println("Miercoles");
-				    System.out.println(Math.PI);
+				    System.out.println(Math.PI)
 		                    break; 
 	                    case 4: 
 		                    println("Jueves"); 
