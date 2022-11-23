@@ -1,3 +1,6 @@
+def BUILD_USER = "Jhon Montes"
+def BUILD_USER_ID = 3680
+
 pipeline
 {
     agent any
@@ -17,8 +20,8 @@ pipeline
                         echo "Version Java"
                         EjecutamosProceso('java version')
                         echo "Usuario que ejecuta el Proceso"
-                        echo "$CHANGE_AUTHOR"
                         echo "$BUILD_USER"
+                        echo "ID del Usuario que ejecuta el Proceso"
                         echo "$BUILD_USER_ID"
                         
                         
