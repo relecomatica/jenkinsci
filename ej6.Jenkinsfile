@@ -10,7 +10,7 @@ pipeline {
 
                     switch(intHora) {            
 	                    case 1:
-                        	while ( intHora =< 10 ) 
+                        	while ( intHora <= 10 ) 
 				{
                         		EjecutamosComandoDos('ComandoDos')
                         	}
