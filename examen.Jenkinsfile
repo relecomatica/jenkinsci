@@ -11,7 +11,7 @@ pipeline {
         stage("Comprobar fecha") {
             steps {
                 script {
-                    def dia = 3
+                    def dia = 2
                     def map=[
                         1:"Lunes",
                         2:"Martes",
