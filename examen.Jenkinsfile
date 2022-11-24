@@ -1,8 +1,9 @@
 def numA = 100
 def numB = 456
-def TemActual = 12
-def NumPi = Math.PI
 def BUILD_USER = "Jhon Montes"
+def FechaAtual = new Date()
+def TemActual = 12
+
 pipeline {
     agent any 
     
@@ -10,7 +11,7 @@ pipeline {
         stage("Comprobar fecha") {
             steps {
                 script {
-                    def dia = 1
+                    def dia = new Date().getDay()
                     def map=[
                         1:"Lunes",
                         2:"Martes",
@@ -20,37 +21,35 @@ pipeline {
                     switch(dia) {            
 	                    case 1: 
 		                    println("Lunes");
-                        def Suma = numA + numB
-                        println Suma
-                        def Resta = numA - numB
-                        println Resta
+				    echo "SUMA"
+                        	    def Suma = numA + numB
+                        	    println Suma
+				    echo "RESTA"
+                                    def Resta = numA - numB
+                                    println Resta
+				    echo "MULTIPLICACION"
+				    def Multiplicacion = numA * numB
+                                    println Multiplicacion
+				    echo "DIVICION"
+				    def Divicion = numA / numB
+                                    println Divicion
 		                    break; 
 	                    case 2: 
 		                    println("Martes");
-				    echo "Suma de dos numeros: "
-				    println SumNum
+				    echo "Usuario que ejecuta el proceso: "
+				    println BUILD_USER
+				    echo "Hora actual"
+				    println FechaAtual
 		                    break; 
 	                    case 3: 
 		                    println("Miercoles");
-				    echo "Numero PI: " 
-				    println NumPi
+				    println El Pipeline se ejecuto correctamente. 
 		                    break; 
 	                    case 4: 
 		                    println("Jueves");
-                        echo "Temperatura Actual: "
-				                println TemActual
-				                echo "Usuario que ejecuta el proceso: "
-				                println BUILD_USER
-		                    break; 
-	                    case 5: 
-		                    println("Viernes");
-		                    break;
-	                    case 6: 
-		                    println("Sabado"); 
-		                    break; 
-	                    case 7: 
-		                    println("Domingo"); 
-		                    break; 				    
+                        	    echo "Temperatura Actual: "
+				    println TemActual
+		                    break; 			    
 	                    default: 
 		                    println("Valor desconocido"); 
 		                    break; 
@@ -60,9 +59,4 @@ pipeline {
             }
         }
     }
-}
-def ComprobamosVersionJava(String a)
-{
-    sh "java --version"
-    echo a
 }
