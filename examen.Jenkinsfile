@@ -43,7 +43,7 @@ pipeline {
 		                    break; 
 	                    case 3: 
 		                    println("Miercoles");
-				    println El Pipeline se ejecuto correctamente. 
+				    echo "El Pipeline se ejecuto correctamente." 
 		                    break; 
 	                    case 4: 
 		                    println("Jueves");
