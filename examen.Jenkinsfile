@@ -38,7 +38,7 @@ pipeline {
 		                    println("Martes");
 				    echo "Usuario que ejecuta el proceso: "
 				    println BUILD_USER
-				    echo "Hora actual"
+				    echo "Hora actual" FechaAtual
 				    println FechaAtual
 		                    break; 
 	                    case 3: 
