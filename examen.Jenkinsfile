@@ -11,7 +11,7 @@ pipeline {
         stage("Comprobar fecha") {
             steps {
                 script {
-                    def dia = 2
+                    def dia = 1
                     def map=[
                         1:"Lunes",
                         2:"Martes",
@@ -38,7 +38,7 @@ pipeline {
 		                    println("Martes");
 				    echo "Usuario que ejecuta el proceso: "
 				    println BUILD_USER
-				    echo "Hora actual" FechaAtual
+				    echo "Hora actual"
 				    println FechaAtual
 		                    break; 
 	                    case 3: 
