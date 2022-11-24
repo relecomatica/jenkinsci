@@ -32,7 +32,6 @@ pipeline {
                                     println Multiplicacion
 				    echo "DIVICION"
 				    def Divicion = numA / numB
-				    echo "DIVICION" Divicion
                                     println Divicion
 		                    break; 
 	                    case 2: 
